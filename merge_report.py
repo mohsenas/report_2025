@@ -5,15 +5,17 @@ def merge_html():
     comp_dir = os.path.join(base_dir, "components")
     output_file = os.path.join(base_dir, "annual_report_2025.html")
     
-    # Define the order of components
+    # Clean, minimalist component order
     components = [
+        "cover.html",
         "header.html",
-        "hero.html",
-        "ai_innovation.html",
-        "finance.html",
-        "supply_chain_production.html",
-        "infrastructure.html",
-        "timeline.html",
+        "toc.html",
+        "executive_summary.html",
+        "ai_section.html",
+        "erp_modules.html",
+        "finance_section.html",
+        "infrastructure_section.html",
+        "timeline_section.html",
         "footer.html"
     ]
     
@@ -22,14 +24,11 @@ def merge_html():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawras ERP Annual Report 2025 | Obeikan Digital Solutions</title>
+    <title>Annual Report 2025 | Obeikan Digital Solutions</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="report-container">
 """
     
     for comp in components:
@@ -39,9 +38,10 @@ def merge_html():
                 html_content += f"\n<!-- {comp} -->\n"
                 html_content += f.read()
         else:
-            print(f"Warning: {comp} not found.")
+            print(f"Warning: {comp} not found")
             
     html_content += """
+</div>
 </body>
 </html>
 """
@@ -49,7 +49,7 @@ def merge_html():
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(html_content)
     
-    print(f"Report successfully merged into {output_file}")
+    print(f"✓ Report successfully created: {output_file}")
 
 if __name__ == "__main__":
     merge_html()

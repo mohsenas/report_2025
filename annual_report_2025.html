@@ -3,268 +3,877 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawras ERP Annual Report 2025 | Obeikan Digital Solutions</title>
+    <title>Annual Report 2025 | Obeikan Digital Solutions</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
+<div class="report-container">
 
-<!-- header.html -->
-<header>
-    <div class="nav-container">
-        <div class="logo-group">
-            <div class="kitsys-logo">
-                <svg viewBox="0 0 150 38" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#01512d" d="M69.3,27.3l1.1,1.6h-3.7l-1.1-1.5c-3-4-8.1-6.4-13.7-7.2l-0.2,0V29h-3.5V12.5c0-1.9,1.5-3.5,3.5-3.5v8.6
-            c1.1,0.1,2.2,0.2,3.3,0.5l1.2-0.4c4.4-1.6,8.3-3.9,11.6-7.7L68.6,9h1.8c0,0-4.3,6.6-13.1,9.7C62.2,20.4,66.9,23.8,69.3,27.3z"></path>
-                    <path fill="#01512d" d="M72.8,12.6l-2-2l2-2l2,2L72.8,12.6z M74.5,14.5V29H71V17.9C71,16,72.6,14.5,74.5,14.5z"></path>
-                    <path fill="#01512d" d="M84.2,28v0.8h-2.6c-1.9,0-3.5-1.6-3.5-3.5v-9.8H76v-1.1h2.2v-3.8c1.9,0,3.5,1.5,3.5,3.5v0.4h1.7v1.1h-1.7v10.8
-            c0,0.7,0.6,1.4,1.4,1.4h0.9C84,27.7,84.2,27.8,84.2,28z"></path>
-                    <path fill="#01512d" d="M101.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3
-            c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.9-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5
-            c-1.6-0.2-6.1,0.1-6.1,2C88.2,22.9,101.5,17.5,101.5,24.8z"></path>
-                    <path fill="#01512d" d="M137.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3
-            c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.8-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5
-            c-1.6-0.2-6.1,0.1-6.1,2C124.2,22.9,137.5,17.5,137.5,24.8z"></path>
-                    <polygon fill="#01512d" points="111.7,28.8 107.3,36.9 108.8,36.9 120.9,14.5 119.5,14.5 112.3,27.7 105.1,14.5 101.3,14.5
-            109.1,28.8 	"></polygon>
+<!-- cover.html -->
+<div class="cover">
+    <!-- Logo Section -->
+    <div class="cover-top">
+        <div class="cover-logos-modern">
+            <div style="display: flex; align-items: center; gap: 2px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.03 407.69" style="height: 35px;">
+                    <defs><style>.a{fill:url(#a);}.b{fill:url(#b);}.c{fill:url(#c);}</style>
+                    <linearGradient id="a" x1="15.78" y1="267.23" x2="435.9" y2="267.23" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.07" stop-color="#2daddf"/><stop offset="0.24" stop-color="#248dc7"/><stop offset="0.41" stop-color="#1d74b4"/><stop offset="0.59" stop-color="#1862a7"/><stop offset="0.78" stop-color="#15579f"/><stop offset="1" stop-color="#14549c"/></linearGradient>
+                    <linearGradient id="b" x1="174.51" y1="12.11" x2="423.37" y2="155.78" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.22" stop-color="#2aa0d5"/><stop offset="0.56" stop-color="#1e77b6"/><stop offset="0.84" stop-color="#175da3"/><stop offset="1" stop-color="#14549c"/></linearGradient>
+                    <linearGradient id="c" x1="-8.56" y1="441.63" x2="102.26" y2="249.68" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.08" stop-color="#2eb1e1"/><stop offset="0.36" stop-color="#2389c3"/><stop offset="0.62" stop-color="#1b6cae"/><stop offset="0.84" stop-color="#165aa1"/><stop offset="1" stop-color="#14549c"/></linearGradient></defs>
+                    <path class="a" d="M125.76,222.07q35.65-30.78,71.39-61.64,39.14-33.93,78.19-67.92c2.24-2,4.33-3.33,7.51-3.25q75.22.1,150.52.07a17.3,17.3,0,0,1,2.53.43c-6.22,5.42-11.85,10.41-17.49,15.32Q300.16,207.62,182,310.15c-20.88,18.14-41.62,36.49-62.79,54.2C99.53,380.82,77.2,385,53.5,374.61,30,364.2,17.3,345,16.22,319.4c-.94-22.69-.08-45.45,0-68.14,2.38,0,2.38,2.1,3,3.54,10.62,24.86,38.44,25.65,52,13.08,15.46-14.38,32-27.6,47.9-41.55C121.14,224.45,122.94,222.43,125.76,222.07Z" transform="translate(-15.78 -46.19)"/>
+                    <path class="b" d="M125.18,404.45c32.16-28,62.44-55.71,94.16-81.73,16.83-13.87,38-17.92,59.75-17.34,25.15.65,47.19,9.47,66.19,26L480.12,448.46c1.59,1.37,3.11,2.81,4.7,4.19-1,2-2.75,1-4.05,1-49.43.07-98.85,0-148.28.07a10.44,10.44,0,0,1-7.66-2.82c-10.69-9.54-21.75-18.64-32.37-28.25-29.19-26.3-63.73-37.21-102.46-35.91C168.76,387.61,158.64,390.5,125.18,404.45Z" transform="translate(-15.78 -46.19)"/>
+                    <path class="c" d="M125.76,222.07C107,238.4,88.69,255.23,69.33,270.91c-16.55,13.37-42.56,5.5-51-14.45-.72-1.73-1.37-3.54-2.09-5.27-.08-2.46-.22-5-.22-7.44V46.19c10.62,9.18,20.38,17.49,30.13,25.94,25.08,21.68,50.15,43.5,75.37,65.11a10.87,10.87,0,0,1,4.26,9.17C125.54,171.63,125.76,196.85,125.76,222.07Z" transform="translate(-15.78 -46.19)"/>
+                </svg>
+                <svg viewBox="48 9 95 29" xmlns="http://www.w3.org/2000/svg" style="height: 25px;">
+                    <path fill="currentColor" d="M69.3,27.3l1.1,1.6h-3.7l-1.1-1.5c-3-4-8.1-6.4-13.7-7.2l-0.2,0V29h-3.5V12.5c0-1.9,1.5-3.5,3.5-3.5v8.6 c1.1,0.1,2.2,0.2,3.3,0.5l1.2-0.4c4.4-1.6,8.3-3.9,11.6-7.7L68.6,9h1.8c0,0-4.3,6.6-13.1,9.7C62.2,20.4,66.9,23.8,69.3,27.3z"></path>
+                    <path fill="currentColor" d="M72.8,12.6l-2-2l2-2l2,2L72.8,12.6z M74.5,14.5V29H71V17.9C71,16,72.6,14.5,74.5,14.5z"></path>
+                    <path fill="currentColor" d="M84.2,28v0.8h-2.6c-1.9,0-3.5-1.6-3.5-3.5v-9.8H76v-1.1h2.2v-3.8c1.9,0,3.5,1.5,3.5,3.5v0.4h1.7v1.1h-1.7v10.8 c0,0.7,0.6,1.4,1.4,1.4h0.9C84,27.7,84.2,27.8,84.2,28z"></path>
+                    <path fill="currentColor" d="M101.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3 c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.9-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5 c-1.6-0.2-6.1,0.1-6.1,2C88.2,22.9,101.5,17.5,101.5,24.8z"></path>
+                    <path fill="currentColor" d="M137.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3 c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.8-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5 c-1.6-0.2-6.1,0.1-6.1,2C124.2,22.9,137.5,17.5,137.5,24.8z"></path>
+                    <polygon fill="currentColor" points="111.7,28.8 107.3,36.9 108.8,36.9 120.9,14.5 119.5,14.5 112.3,27.7 105.1,14.5 101.3,14.5 109.1,28.8 	"></polygon>
                 </svg>
             </div>
-            <div class="divider" style="width: 1px; height: 30px; background: #ddd;"></div>
-            <div class="nawras-logo">
-                <img src="../full-logo.svg" alt="Nawras Logo">
-            </div>
-        </div>
-        <div class="client-name" style="font-weight: bold; color: var(--primary-color);">
-            Obeikan Digital Solutions
-        </div>
-    </div>
-</header>
-
-<!-- hero.html -->
-<section class="hero">
-    <div class="hero-content">
-        <span class="badge">Annual Report 2025</span>
-        <h1>Nawras ERP Evolution</h1>
-        <p>A Year of Digital Transformation, Innovation, and Excellence in System Development for Obeikan Digital Solutions.</p>
-        <div style="margin-top: 2rem;">
-            <p style="font-size: 1.1rem; opacity: 0.8;">Empowering enterprise efficiency through AI-driven insights and robust financial architecture.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ai_innovation.html -->
-<section id="ai-innovation" class="container">
-    <div style="text-align: center; margin-bottom: 3rem;">
-        <span class="badge" style="background: var(--primary-color); color: var(--white);">Vision 2030 Aligned</span>
-        <h2>AI & Intelligent Automation</h2>
-        <p>Revolutionizing ERP capabilities through advanced AI agents and document intelligence.</p>
-    </div>
-    <div class="grid">
-        <div class="card animate">
-            <i class="fas fa-robot"></i>
-            <h3>AppAIAgent Framework</h3>
-            <p>Established a comprehensive AI agent framework with gRPC services. Specialized agents for Sales trends, Purchase performance, and Inventory optimization.</p>
-        </div>
-        <div class="card animate">
-            <i class="fas fa-search-plus"></i>
-            <h3>Advanced OCR System</h3>
-            <p>Bilingual (Arabic/English) text extraction service supporting PDF and images. Integrated with Tesseract and ImageMagick for high-fidelity invoice parsing.</p>
-        </div>
-        <div class="card animate">
-            <i class="fas fa-brain"></i>
-            <h3>Predictive Analytics</h3>
-            <p>Implemented lead time prediction models and risk scoring agents for supply chain resilience and proactive decision-making.</p>
-        </div>
-    </div>
-</section>
-
-<!-- finance.html -->
-<section id="finance-receivables" class="modules-bg">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h2>Financial Excellence & Compliance</h2>
-            <p>Driving financial integrity with ZATCA-compliant e-invoicing and robust reporting engines.</p>
-        </div>
-        <div class="grid">
-            <div class="card animate" style="border-top-color: var(--primary-color);">
-                <i class="fas fa-file-invoice-dollar" style="color: var(--primary-color);"></i>
-                <h3>ZATCA E-Invoicing</h3>
-                <p>Fully compliant integration with the Saudi Tax Authority. Automated submission of standard and simplified e-invoices, QR code generation, and ICV/PIH chain validation.</p>
-            </div>
-            <div class="card animate" style="border-top-color: var(--primary-color);">
-                <i class="fas fa-chart-line" style="color: var(--primary-color);"></i>
-                <h3>Advanced Reporting</h3>
-                <p>Dynamic P&L, Balance Sheet, and Trial Balance reports with Excel export. Period-based filtering and multi-dimensional financial analysis.</p>
-            </div>
-            <div class="card animate" style="border-top-color: var(--primary-color);">
-                <i class="fas fa-coins" style="color: var(--primary-color);"></i>
-                <h3>Transaction Core</h3>
-                <p>Modernized Journal Entries, General Ledger management, and background transaction processing for high-volume financial data.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- supply_chain_production.html -->
-<section id="supply-chain" class="container">
-    <div style="text-align: center; margin-bottom: 3rem;">
-        <h2>Agile Supply Chain & Logistics</h2>
-        <p>Seamlessly connecting suppliers, customers, and operations for unparalleled efficiency.</p>
-    </div>
-    <div class="grid">
-        <div class="card animate">
-            <i class="fas fa-handshake"></i>
-            <h3>Suppliers Portal</h3>
-            <p>Comprehensive RFQ management, Proposed/Discrete PO tracking, and Advance Ship Notice (ASN) workflows with real-time warehouse integration.</p>
-        </div>
-        <div class="card animate">
-            <i class="fas fa-user-tag"></i>
-            <h3>Customer Portal</h3>
-            <p>Empowering clients with order tracking timelines, quotation management, and automated item mapping for accurate order fulfillment.</p>
-        </div>
-        <div class="card animate">
-            <i class="fas fa-boxes"></i>
-            <h3>Warehouse & Inventory</h3>
-            <p>High-precision stock tracking, cycle counting, and multi-location management. Integrated with logistics for end-to-end shipment visibility.</p>
+            <span class="logo-separator">×</span>
+            <img src="../full-logo.svg" alt="Nawras ERP" style="height: 38px;">
         </div>
     </div>
     
-    <div style="margin-top: 4rem; background: var(--white); padding: 3rem; border-radius: 20px; box-shadow: var(--shadow);">
-        <h3 style="text-align: center; margin-bottom: 2rem;">Production & Manufacturing</h3>
-        <div class="grid">
-            <div class="module-item">
-                <div class="module-icon"><i class="fas fa-industry"></i></div>
-                <div>
-                    <h4>End-to-End Control</h4>
-                    <p>Production order lifecycle management from planning and costing to execution and final closing.</p>
-                </div>
+    <!-- Center Content -->
+    <div class="cover-center">
+        <div class="year-modern">2025</div>
+        <h1 class="cover-title">Annual Report</h1>
+        <div class="cover-meta">
+            <span class="meta-client">Obeikan Digital Solutions</span>
+            <span class="meta-separator">•</span>
+            <span class="meta-developer">Kitsys for Digital Solutions</span>
+        </div>
+    </div>
+    
+    <!-- Bottom Section -->
+    <div class="cover-bottom"></div>
+</div>
+
+<!-- header.html -->
+<header class="report-header">
+    <div class="header-logos">
+        <!-- Complete Kitsys Logo: Icon + Text -->
+        <div style="display: flex; align-items: center; gap: 2px;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.03 407.69" style="height: 25px;">
+                <defs><style>.a{fill:url(#a);}.b{fill:url(#b);}.c{fill:url(#c);}</style>
+                <linearGradient id="a" x1="15.78" y1="267.23" x2="435.9" y2="267.23" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.07" stop-color="#2daddf"/><stop offset="0.24" stop-color="#248dc7"/><stop offset="0.41" stop-color="#1d74b4"/><stop offset="0.59" stop-color="#1862a7"/><stop offset="0.78" stop-color="#15579f"/><stop offset="1" stop-color="#14549c"/></linearGradient>
+                <linearGradient id="b" x1="174.51" y1="12.11" x2="423.37" y2="155.78" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.22" stop-color="#2aa0d5"/><stop offset="0.56" stop-color="#1e77b6"/><stop offset="0.84" stop-color="#175da3"/><stop offset="1" stop-color="#14549c"/></linearGradient>
+                <linearGradient id="c" x1="-8.56" y1="441.63" x2="102.26" y2="249.68" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.08" stop-color="#2eb1e1"/><stop offset="0.36" stop-color="#2389c3"/><stop offset="0.62" stop-color="#1b6cae"/><stop offset="0.84" stop-color="#165aa1"/><stop offset="1" stop-color="#14549c"/></linearGradient></defs>
+                <path class="a" d="M125.76,222.07q35.65-30.78,71.39-61.64,39.14-33.93,78.19-67.92c2.24-2,4.33-3.33,7.51-3.25q75.22.1,150.52.07a17.3,17.3,0,0,1,2.53.43c-6.22,5.42-11.85,10.41-17.49,15.32Q300.16,207.62,182,310.15c-20.88,18.14-41.62,36.49-62.79,54.2C99.53,380.82,77.2,385,53.5,374.61,30,364.2,17.3,345,16.22,319.4c-.94-22.69-.08-45.45,0-68.14,2.38,0,2.38,2.1,3,3.54,10.62,24.86,38.44,25.65,52,13.08,15.46-14.38,32-27.6,47.9-41.55C121.14,224.45,122.94,222.43,125.76,222.07Z" transform="translate(-15.78 -46.19)"/>
+                <path class="b" d="M125.18,404.45c32.16-28,62.44-55.71,94.16-81.73,16.83-13.87,38-17.92,59.75-17.34,25.15.65,47.19,9.47,66.19,26L480.12,448.46c1.59,1.37,3.11,2.81,4.7,4.19-1,2-2.75,1-4.05,1-49.43.07-98.85,0-148.28.07a10.44,10.44,0,0,1-7.66-2.82c-10.69-9.54-21.75-18.64-32.37-28.25-29.19-26.3-63.73-37.21-102.46-35.91C168.76,387.61,158.64,390.5,125.18,404.45Z" transform="translate(-15.78 -46.19)"/>
+                <path class="c" d="M125.76,222.07C107,238.4,88.69,255.23,69.33,270.91c-16.55,13.37-42.56,5.5-51-14.45-.72-1.73-1.37-3.54-2.09-5.27-.08-2.46-.22-5-.22-7.44V46.19c10.62,9.18,20.38,17.49,30.13,25.94,25.08,21.68,50.15,43.5,75.37,65.11a10.87,10.87,0,0,1,4.26,9.17C125.54,171.63,125.76,196.85,125.76,222.07Z" transform="translate(-15.78 -46.19)"/>
+            </svg>
+            <svg viewBox="48 9 95 29" xmlns="http://www.w3.org/2000/svg" style="height: 20px;">
+                <path fill="currentColor" d="M69.3,27.3l1.1,1.6h-3.7l-1.1-1.5c-3-4-8.1-6.4-13.7-7.2l-0.2,0V29h-3.5V12.5c0-1.9,1.5-3.5,3.5-3.5v8.6 c1.1,0.1,2.2,0.2,3.3,0.5l1.2-0.4c4.4-1.6,8.3-3.9,11.6-7.7L68.6,9h1.8c0,0-4.3,6.6-13.1,9.7C62.2,20.4,66.9,23.8,69.3,27.3z"></path>
+                <path fill="currentColor" d="M72.8,12.6l-2-2l2-2l2,2L72.8,12.6z M74.5,14.5V29H71V17.9C71,16,72.6,14.5,74.5,14.5z"></path>
+                <path fill="currentColor" d="M84.2,28v0.8h-2.6c-1.9,0-3.5-1.6-3.5-3.5v-9.8H76v-1.1h2.2v-3.8c1.9,0,3.5,1.5,3.5,3.5v0.4h1.7v1.1h-1.7v10.8 c0,0.7,0.6,1.4,1.4,1.4h0.9C84,27.7,84.2,27.8,84.2,28z"></path>
+                <path fill="currentColor" d="M101.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3 c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.9-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5 c-1.6-0.2-6.1,0.1-6.1,2C88.2,22.9,101.5,17.5,101.5,24.8z"></path>
+                <path fill="currentColor" d="M137.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3 c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.8-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5 c-1.6-0.2-6.1,0.1-6.1,2C124.2,22.9,137.5,17.5,137.5,24.8z"></path>
+                <polygon fill="currentColor" points="111.7,28.8 107.3,36.9 108.8,36.9 120.9,14.5 119.5,14.5 112.3,27.7 105.1,14.5 101.3,14.5 109.1,28.8 	"></polygon>
+            </svg>
+        </div>
+        <div class="divider"></div>
+        <img src="../full-logo.svg" alt="Nawras ERP" style="height: 28px;">
+    </div>
+    <div class="header-info">
+        <div class="header-client">Obeikan Digital Solutions</div>
+        <div>Annual Report 2025</div>
+    </div>
+</header>
+
+<!-- toc.html -->
+<section>
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li>
+                <a href="#executive-summary">01. Executive Summary</a>
+                <span class="page-num">03</span>
+            </li>
+            <li>
+                <a href="#success-metrics">02. Success Metrics & Performance</a>
+                <span class="page-num">04</span>
+            </li>
+            <li>
+                <a href="#ai-innovation">03. AI & Intelligent Automation</a>
+                <span class="page-num">06</span>
+            </li>
+            <li>
+                <a href="#erp-modules">04. Nawras ERP Core Modules</a>
+                <span class="page-num">08</span>
+            </li>
+            <li>
+                <a href="#finance">05. Financial Systems & ZATCA Compliance</a>
+                <span class="page-num">13</span>
+            </li>
+            <li>
+                <a href="#infrastructure">06. Platform & Infrastructure</a>
+                <span class="page-num">16</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- executive_summary.html -->
+<section id="executive-summary">
+    <span class="section-number">01</span>
+    <h1>Executive Summary</h1>
+    
+    <p>The 2025 fiscal year marks a transformative period for Obeikan Digital Solutions, highlighted by the rapid evolution of the Nawras ERP system. Kitsys for Digital Solutions has successfully delivered a robust, integrated enterprise solution addressing complex business needs across sales, procurement, manufacturing, finance, and logistics.</p>
+    
+    <div class="highlight">
+        <h4>Strategic Achievements</h4>
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Core Modules</span>
             </div>
-            <div class="module-item">
-                <div class="module-icon"><i class="fas fa-calculator"></i></div>
-                <div>
-                    <h4>Costing Engine</h4>
-                    <p>Automated standard and actual cost calculations with detailed variance analysis for materials and tasks.</p>
-                </div>
+            <div class="stat">
+                <span class="stat-number">85%</span>
+                <span class="stat-label">Live in Production</span>
             </div>
-            <div class="module-item">
-                <div class="module-icon"><i class="fas fa-calendar-alt"></i></div>
-                <div>
-                    <h4>Resource Planning</h4>
-                    <p>Visual scheduling tools, capacity monitoring, and comprehensive production calendars.</p>
-                </div>
+            <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">ZATCA Compliant</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">Angular 20</span>
+                <span class="stat-label">Platform Upgrade</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">AI-Powered</span>
+                <span class="stat-label">Automation</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">Microservices</span>
+                <span class="stat-label">Architecture</span>
+            </div>
+        </div>
+    </div>
+    
+    <p>Key strategic achievements include launching a sophisticated AI Agent Framework, achieving full ZATCA Phase 2 compliance for e-invoicing, and deploying a comprehensive Suppliers Portal. By upgrading to Angular 20 and implementing micro-frontend architecture via Module Federation, we have ensured that Nawras remains a state-of-the-art platform.</p>
+    
+    <p><strong>Production Success:</strong> The majority of the Nawras ERP system is now live in the business environment, delivering real value to Obeikan Digital Solutions. Our modules are actively processing transactions, managing inventory, automating workflows, and enabling data-driven decision-making across the enterprise.</p>
+</section>
+
+<!-- Success Metrics Dashboard -->
+<section id="success-metrics">
+    <span class="section-number">02</span>
+    <h1>Success Metrics & Performance Dashboard</h1>
+    
+    <p>Our commitment to excellence is demonstrated through quantifiable achievements and robust system performance across all modules.</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 50px 0;">
+        <div class="chart-card">
+            <h3 style="margin-top: 0; color: #14549c;">Module Completion Status</h3>
+            <div class="chart-container">
+                <canvas id="moduleCompletionChart"></canvas>
+            </div>
+        </div>
+        <div class="chart-card">
+            <h3 style="margin-top: 0; color: #14549c;">Production Deployment Progress</h3>
+            <div class="chart-container">
+                <canvas id="productionProgressChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px;">
+        <div style="background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; padding: 30px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">85%</div>
+            <div style="font-size: 0.9rem; opacity: 0.9;">Live in Production</div>
+        </div>
+        <div style="background: linear-gradient(135deg, #248dc7 0%, #8ae3ff 100%); color: white; padding: 30px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">100%</div>
+            <div style="font-size: 0.9rem; opacity: 0.9;">ZATCA Compliance</div>
+        </div>
+        <div style="background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; padding: 30px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">7</div>
+            <div style="font-size: 0.9rem; opacity: 0.9;">Microservices</div>
+        </div>
+        <div style="background: linear-gradient(135deg, #248dc7 0%, #8ae3ff 100%); color: white; padding: 30px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">15+</div>
+            <div style="font-size: 0.9rem; opacity: 0.9;">Core Modules</div>
+        </div>
+    </div>
+</section>
+
+<!-- ai_section.html -->
+<section id="ai-innovation">
+    <span class="section-number">03</span>
+    <h1>AI & Intelligent Automation</h1>
+    
+    <p>Nawras has evolved beyond traditional ERP by integrating artificial intelligence and advanced document processing capabilities.</p>
+    
+    <!-- AI Agents Feature Card -->
+    <div style="background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; border-radius: 16px; padding: 50px; margin: 50px 0; box-shadow: 0 10px 40px rgba(20, 84, 156, 0.25);">
+        <h2 style="color: white; margin-top: 0; font-size: 2.2rem;">AI Agents: Intelligent Automation</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 35px;">Advanced AI agents powered by machine learning provide intelligent automation across critical business processes.</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.3rem;">Exception Explaining</h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7;">AI agents automatically detect, analyze, and explain anomalies and exceptions in business processes. Provides clear, actionable insights for decision-makers.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.3rem;">Auto-Approval</h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7;">Intelligent auto-approval system for routine transactions based on configurable business rules. Reduces manual processing time while maintaining control.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.3rem;">Planning Intelligence</h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7;">AI-powered planning agents optimize resource allocation, scheduling, and inventory management using predictive analytics and machine learning models.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Two-column layout without background -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 50px 0;">
+        <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid #14549c;">
+            <h2 style="margin-top: 0; color: #14549c;">AppAIAgent Framework</h2>
+            <p>Established a comprehensive AI agent framework that evolved throughout 2025:</p>
+            <ul>
+                <li>Built core infrastructure with gRPC services and agent configuration systems</li>
+                <li>Implemented specialized agents for Sales, Purchase, Inventory, and Risk Assessment</li>
+                <li>Developed lead time prediction using machine learning models</li>
+                <li>Implemented multi-tenant model training and execution</li>
+                <li>Created prescriptive recommendation systems</li>
+            </ul>
+        </div>
+        
+        <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid #248dc7;">
+            <h2 style="margin-top: 0; color: #248dc7;">Document Processing</h2>
+            <p>Advanced OCR capabilities supporting Arabic and English:</p>
+            <ul>
+                <li>Integrated Tesseract OCR engine and ImageMagick preprocessing</li>
+                <li>Built document text extraction service with PDF support</li>
+                <li>Developed invoice parsing and supplier invoice matching</li>
+                <li>Created Docker support for all dependencies</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="highlight">
+        <h2 style="margin-top: 0;">Audit Service</h2>
+        <ul>
+            <li>Designed and implemented comprehensive audit logging system</li>
+            <li>Integrated across multiple modules with customizable auditing behavior</li>
+            <li>Added multi-tenancy support for audit records</li>
+            <li>Created REST and gRPC interfaces for audit log retrieval</li>
+        </ul>
+    </div>
+</section>
+
+<!-- erp_modules.html -->
+<section id="erp-modules">
+    <span class="section-number">04</span>
+    <h1>Nawras ERP Core Modules</h1>
+    
+    <p>The core of Nawras ERP covers the entire value chain of enterprise operations, from initial customer inquiry to final delivery and financial reconciliation.</p>
+    
+    <div class="module-section">
+        <h3>Sales Management</h3>
+        <h4>Operations & Lifecycle</h4>
+        <ul>
+            <li>Sales Order & Quotation: Complete lifecycle management with versioning and professional conversion tools</li>
+            <li>Rework Order: Specialized handling for defective products and customer returns</li>
+            <li>Customer Management: Centralized profile, credit, and contact management</li>
+            <li>Order & Quotation History: Comprehensive audit trails</li>
+        </ul>
+        
+        <h4>Customer Portal</h4>
+        <ul>
+            <li>Order Tracker timeline with clear state visualization and progress history</li>
+            <li>Read/unread tracking for customer engagement monitoring</li>
+            <li>Automated item mapping for seamless order processing</li>
+        </ul>
+        
+        <h4>Configuration & Analytics</h4>
+        <ul>
+            <li>Pricing: Flexible "Prices by Customer" configuration for negotiated contracts</li>
+            <li>Sales Force: Management of Sales Representatives, commission structures, and territories</li>
+            <li>Approvals: Multi-level approval matrix for financial controls</li>
+            <li>Sales Analysis: Interactive dashboards for revenue trends and regional performance</li>
+        </ul>
+    </div>
+    
+    <div class="module-section">
+        <h3>Procurement (Purchase)</h3>
+        <h4>Suppliers Portal</h4>
+        <ul>
+            <li>Request for Quotation Management System: Complete RFQ lifecycle management from creation through publishing</li>
+            <li>Proposed Purchase Order Management: Comprehensive system for proposed orders before conversion to discrete POs</li>
+            <li>Discrete Purchase Order Management: Full discrete PO management for confirmed orders</li>
+            <li>Advance Ship Notice Management: Complete ASN system with comprehensive status tracking and warehouse integration</li>
+            <li>Supplier Item Dictionary: Centralized mapping of customer items to supplier-specific codes</li>
+            <li>Shipping Track Management: Automatic recording of all status changes for advance ship notices</li>
+        </ul>
+        
+        <h4>Purchase Operations</h4>
+        <ul>
+            <li>Purchase Order: Robust creation and tracking</li>
+            <li>Requisitions: Internal request workflows to standardize demand</li>
+            <li>Inquiries: Efficient supplier inquiry and quote gathering</li>
+            <li>Goods Receipt: Validation and recording of received materials</li>
+            <li>Proposed PO: AI/System-recommended orders to optimize stock levels</li>
+        </ul>
+        
+        <h4>Integration</h4>
+        <ul>
+            <li>Event-driven integration with Purchase system for automatic RFQ and PO creation</li>
+            <li>Bidirectional integration with Warehouse for receipt notice status updates</li>
+            <li>Notification system for real-time supplier alerts</li>
+        </ul>
+    </div>
+    
+    <!-- Data Importer Feature Card -->
+    <div style="background: linear-gradient(135deg, #248dc7 0%, #8ae3ff 100%); color: white; border-radius: 16px; padding: 50px; margin: 50px 0; box-shadow: 0 10px 40px rgba(36, 141, 199, 0.25);">
+        <h2 style="color: white; margin-top: 0; font-size: 2.2rem;">Professional Data Importer for Supply Chain</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 35px;">Comprehensive data import system enabling seamless migration from legacy systems with enterprise-grade validation, mapping, and error handling.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: white; margin-top: 0; font-size: 1.2rem; margin-bottom: 15px;">Core Capabilities</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;">✓ Complete data validation and mapping</li>
+                    <li style="margin-bottom: 10px;">✓ Batch import with progress tracking</li>
+                    <li style="margin-bottom: 10px;">✓ Rollback support for data integrity</li>
+                    <li style="margin-bottom: 10px;">✓ Multiple data format support</li>
+                </ul>
+            </div>
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: white; margin-top: 0; font-size: 1.2rem; margin-bottom: 15px;">Technical Features</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;">✓ Transformation rules engine</li>
+                    <li style="margin-bottom: 10px;">✓ Error handling and reporting</li>
+                    <li style="margin-bottom: 10px;">✓ Legacy system integration</li>
+                    <li style="margin-bottom: 10px;">✓ Real-time import monitoring</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="module-section">
+        <h3>Manufacturing</h3>
+        <h4>Operations & Execution</h4>
+        <ul>
+            <li>Production Orders: Creation, release, and management of build orders</li>
+            <li>Order Management: Tools for rescheduling and monitoring active jobs</li>
+            <li>Execution & Closing: Recording output, consumption, and finalizing costs</li>
+        </ul>
+        
+        <h4>Configuration & Setup</h4>
+        <ul>
+            <li>Foundation: Work Centers, Machines, and Standard Tasks</li>
+            <li>Product Definition: Bills of Materials (BOMs) and Routing Codes</li>
+            <li>Planning: Production Calendars and item-specific production attributes</li>
+        </ul>
+        
+        <h4>Costing & Analytics</h4>
+        <ul>
+            <li>Costing Engine: Setup of Cost Components, Surcharges, and Operation Rates</li>
+            <li>Calculation: Automated standard and actual cost calculations</li>
+            <li>Cost Analysis: Detailed variances for Materials, Tasks, and overall Cost Summaries</li>
+            <li>Capacity: Real-time visibility into Available Resource Capacity</li>
+        </ul>
+    </div>
+    
+    <div class="module-section">
+        <h3>Inventory & Warehouse</h3>
+        <h4>Operations</h4>
+        <ul>
+            <li>Transactions: Adjustments, Transfers, Goods Receipts, and Deliveries</li>
+            <li>Internal Flow: Production Receipts, Material Requests, and Consumable Requests</li>
+            <li>Accuracy: Cycle Counting and Maintain Item Lots modules</li>
+            <li>Logistics: Packing Matrix and Movement tracking</li>
+        </ul>
+        
+        <h4>Configuration</h4>
+        <ul>
+            <li>Structure: Warehouse Types, Locations, and Bins</li>
+            <li>Classification: Product Types, Classes, Lines, and Commodities</li>
+            <li>Item Master: Comprehensive management of Items, Groups, and Manufacturers</li>
+            <li>Units: Flexible Unit Categories and Conversion rules</li>
+        </ul>
+        
+        <h4>KPIs & Analytics</h4>
+        <ul>
+            <li>Stock Reports: Real-time Stock Levels, Movement reports with trend analysis</li>
+            <li>Valuation: Inventory Valuation reports covering various costing methods</li>
+        </ul>
+    </div>
+    
+    <!-- Professional Stock Aging Analysis Feature Card -->
+    <div style="background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; border-radius: 16px; padding: 50px; margin: 50px 0; box-shadow: 0 10px 40px rgba(20, 84, 156, 0.25);">
+        <h2 style="color: white; margin-top: 0; font-size: 2.2rem;">Professional & Fast Inventory Stock Aging Analysis</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 35px;">Advanced inventory analysis system providing fast, detailed stock aging breakdowns with comprehensive visualization and reporting capabilities.</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.2rem;">Fast Performance</h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7;">Optimized algorithms deliver instant results even with large inventory datasets, enabling real-time decision-making.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.2rem;">Detailed Breakdowns</h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7;">Comprehensive aging analysis with multiple aging buckets, location-based analysis, and item-level detail drill-down capabilities.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.2rem;">Professional Visualization</h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.7;">Interactive charts and graphs provide clear insights into inventory aging patterns, trends, and potential issues.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Professional KPI Indicators Feature Card -->
+    <div style="background: linear-gradient(135deg, #248dc7 0%, #8ae3ff 100%); color: white; border-radius: 16px; padding: 50px; margin: 50px 0; box-shadow: 0 10px 40px rgba(36, 141, 199, 0.25);">
+        <h2 style="color: white; margin-top: 0; font-size: 2.2rem;">Professional KPI Indicators, Alerts, Charts & Recommendations</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 35px;">Comprehensive real-time KPI dashboard with intelligent alerts, interactive charts, and AI-powered recommendations for data-driven decision making.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: white; margin-top: 0; font-size: 1.2rem; margin-bottom: 20px;">Real-Time Indicators</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">✓ Comprehensive KPI dashboard with customizable metrics</li>
+                    <li style="margin-bottom: 12px;">✓ Real-time data updates and live monitoring</li>
+                    <li style="margin-bottom: 12px;">✓ Interactive charts and visualizations</li>
+                    <li style="margin-bottom: 12px;">✓ Multi-dimensional analysis capabilities</li>
+                </ul>
+            </div>
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: white; margin-top: 0; font-size: 1.2rem; margin-bottom: 20px;">Intelligent Alerts & Recommendations</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">✓ Configurable alert system with threshold management</li>
+                    <li style="margin-bottom: 12px;">✓ AI-powered recommendations and insights</li>
+                    <li style="margin-bottom: 12px;">✓ Automated notifications and escalation rules</li>
+                    <li style="margin-bottom: 12px;">✓ Trend analysis and predictive indicators</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Microservices Architecture Feature Card -->
+    <div style="background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; border-radius: 16px; padding: 50px; margin: 50px 0; box-shadow: 0 10px 40px rgba(20, 84, 156, 0.25);">
+        <h2 style="color: white; margin-top: 0; font-size: 2.2rem;">Supply Chain System: Built with Modern Microservices Architecture</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 35px;">The Supply Chain system exemplifies cutting-edge software architecture, built entirely on microservices principles using the most modern technologies for maximum scalability, resilience, and maintainability.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.2rem; margin-bottom: 20px;">Architecture Benefits</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">✓ Independent service deployment and scaling</li>
+                    <li style="margin-bottom: 12px;">✓ Technology stack flexibility per service</li>
+                    <li style="margin-bottom: 12px;">✓ Fault isolation and enhanced resilience</li>
+                    <li style="margin-bottom: 12px;">✓ Team autonomy and faster development cycles</li>
+                </ul>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: #8ae3ff; margin-top: 0; font-size: 1.2rem; margin-bottom: 20px;">Modern Technical Implementation</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">✓ Container orchestration with Docker & Kubernetes</li>
+                    <li style="margin-bottom: 12px;">✓ API-first design with RESTful and gRPC interfaces</li>
+                    <li style="margin-bottom: 12px;">✓ Event-driven inter-service communication</li>
+                    <li style="margin-bottom: 12px;">✓ Service mesh integration for observability</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- infrastructure.html -->
-<section id="infrastructure" class="modules-bg">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h2>Infrastructure & Platform Modernization</h2>
-            <p>Building the foundation for a scalable, high-performance enterprise ecosystem.</p>
+<!-- finance_section.html -->
+<section id="finance">
+    <span class="section-number">05</span>
+    <h1>Financial Systems & ZATCA Compliance</h1>
+    
+    <p>The financial backbone of Nawras ERP underwent complete modernization with advanced reporting engines and robust transaction management.</p>
+    
+    <!-- Featured Highlight -->
+    <div style="background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; border-radius: 12px; padding: 50px; margin: 50px 0; box-shadow: 0 10px 40px rgba(20, 84, 156, 0.25);">
+        <h2 style="color: white; margin-top: 0; font-size: 2.2rem;">ZATCA E-Invoicing Integration</h2>
+        <h4 style="color: rgba(255,255,255,0.9); margin-top: 0; font-weight: 400;">Full Phase 2 Compliance Achieved</h4>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem;">Complete integration with Saudi Tax Authority (ZATCA) for e-invoicing:</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 35px;">
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 25px; border-radius: 8px;">
+                <strong style="color: #8ae3ff; display: block; margin-bottom: 12px; font-size: 1.05rem;">EGS Units Management</strong>
+                <span style="font-size: 0.95rem; color: rgba(255,255,255,0.9); line-height: 1.6;">Complete lifecycle for electronic generation units with registration and certificate management</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 25px; border-radius: 8px;">
+                <strong style="color: #8ae3ff; display: block; margin-bottom: 12px; font-size: 1.05rem;">E-Invoice Reporting</strong>
+                <span style="font-size: 0.95rem; color: rgba(255,255,255,0.9); line-height: 1.6;">Automatic submission with QR code generation, ICV/PIH chain validation</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 25px; border-radius: 8px;">
+                <strong style="color: #8ae3ff; display: block; margin-bottom: 12px; font-size: 1.05rem;">Settings & Integration</strong>
+                <span style="font-size: 0.95rem; color: rgba(255,255,255,0.9); line-height: 1.6;">Environment configuration with automatic invoice submission and comprehensive error handling</span>
+            </div>
         </div>
-        <div class="grid">
-            <div class="card animate">
-                <i class="fas fa-rocket"></i>
-                <h3>Angular 20 & Modern Web</h3>
-                <p>Successfully upgraded core systems to Angular 20. Leveraged modern control flows and optimized subscription management for a faster, more responsive user experience.</p>
+    </div>
+    
+    <!-- Three-column grid -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin: 40px 0;">
+        <div style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-top: 4px solid #14549c;">
+            <h3 style="margin-top: 0; color: #14549c;">Financial Periods</h3>
+            <ul style="font-size: 0.95rem;">
+                <li>Year type periods generation</li>
+                <li>Module period status tracking</li>
+                <li>Period settings configuration</li>
+                <li>gRPC service implementation</li>
+            </ul>
+        </div>
+        <div style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-top: 4px solid #248dc7;">
+            <h3 style="margin-top: 0; color: #248dc7;">Dimensions</h3>
+            <ul style="font-size: 0.95rem;">
+                <li>CRUD operations</li>
+                <li>Dimension configuration</li>
+                <li>gRPC server implementation</li>
+                <li>Dimension mapping integration</li>
+            </ul>
+        </div>
+        <div style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-top: 4px solid #14549c;">
+            <h3 style="margin-top: 0; color: #14549c;">Ledger Mappings</h3>
+            <ul style="font-size: 0.95rem;">
+                <li>Full CRUD with dynamic dimensions</li>
+                <li>Lookup enhancements</li>
+                <li>Comprehensive validation</li>
+                <li>Mapping schemes UI</li>
+            </ul>
+        </div>
+    </div>
+    
+    <h2>Transaction Management</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <div>
+            <h4>Journal Entries & General Ledger</h4>
+            <ul>
+                <li>Rebuilt Journal Entries module with new General Ledger Entries</li>
+                <li>Full form with dynamic line items, debit/credit validation</li>
+                <li>Support for add, edit, view, and copy modes</li>
+                <li>Integration with Financial Batches</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Integration Transactions</h4>
+            <ul>
+                <li>List, view, simulate, map, and post transactions</li>
+                <li>Bulk operations with detailed error display</li>
+                <li>Process tracking with Financial Process Jobs</li>
+                <li>Background transaction processing for high-volume data</li>
+            </ul>
+        </div>
+    </div>
+    
+    <h2>Accounts Receivable & Payable</h2>
+    <ul>
+        <li><strong>Sales Invoices & Credit Notes:</strong> Multiple invoice creation from delivery notes and sales orders, invoice numbering and series management, integration with ZATCA</li>
+        <li><strong>Purchase Invoices:</strong> Full CRUD with matching/unmatching logic against GRN lines, status workflow and processing</li>
+    </ul>
+    
+    <!-- Dynamic Invoice Builder Feature Card -->
+    <div style="background: linear-gradient(135deg, #248dc7 0%, #8ae3ff 100%); color: white; border-radius: 16px; padding: 50px; margin: 50px 0; box-shadow: 0 10px 40px rgba(36, 141, 199, 0.25);">
+        <h2 style="color: white; margin-top: 0; font-size: 2.2rem;">Dynamic Invoice Builder</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 35px;">A powerful, professional invoice customization system that empowers users to build and customize invoices according to their business requirements with full control over design and content.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: white; margin-top: 0; font-size: 1.2rem; margin-bottom: 20px;">Design & Customization</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">✓ Drag-and-drop visual designer interface</li>
+                    <li style="margin-bottom: 12px;">✓ Template management and reuse</li>
+                    <li style="margin-bottom: 12px;">✓ Brand customization with logos and colors</li>
+                    <li style="margin-bottom: 12px;">✓ Real-time preview and testing</li>
+                </ul>
             </div>
-            <div class="card animate">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Robust Audit & Security</h3>
-                <p>Designed and integrated a comprehensive audit logging system with multi-tenancy support, ensuring full traceability across all critical business operations.</p>
-            </div>
-            <div class="card animate">
-                <i class="fas fa-network-wired"></i>
-                <h3>Architecture & Shell</h3>
-                <p>Enhanced Anhar Shell with Module Federation, improving micro-frontend routing and cross-system consistency across Finance, Manufacturing, and Logistics.</p>
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px;">
+                <h3 style="color: white; margin-top: 0; font-size: 1.2rem; margin-bottom: 20px;">Advanced Features</h3>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">✓ Dynamic fields and formula calculations</li>
+                    <li style="margin-bottom: 12px;">✓ Multi-language support (Arabic & English)</li>
+                    <li style="margin-bottom: 12px;">✓ ZATCA e-invoicing integration</li>
+                    <li style="margin-bottom: 12px;">✓ Flexible layout and styling options</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- timeline.html -->
-<section id="milestones" class="container">
-    <div style="text-align: center; margin-bottom: 3rem;">
-        <h2>2025 Development Journey</h2>
-        <p>A timeline of significant milestones and achievements throughout the year.</p>
+<!-- infrastructure_section.html -->
+<section id="infrastructure">
+    <span class="section-number">06</span>
+    <h1>Platform & Infrastructure Modernization</h1>
+    
+    <!-- Bento Box Grid Layout -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin: 50px 0;">
+        <!-- Large feature card spanning 2 columns -->
+        <div style="grid-column: span 2; background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; padding: 45px; border-radius: 16px;">
+            <h2 style="color: white; margin-top: 0;">UI/UX & Framework Upgrades</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 25px;">
+                <div>
+                    <h4 style="color: #8ae3ff; margin-top: 0;">Angular 20 Migration</h4>
+                    <ul style="color: rgba(255,255,255,0.95); font-size: 1rem;">
+                        <li>Upgraded multiple projects to Angular 20</li>
+                        <li>Modern control flows (@if, @for)</li>
+                        <li>Standalone component patterns</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #8ae3ff; margin-top: 0;">Enhanced Components</h4>
+                    <ul style="color: rgba(255,255,255,0.95); font-size: 1rem;">
+                        <li>Workflow approval sidebar</li>
+                        <li>Notification components</li>
+                        <li>Refactored subscription management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tall card -->
+        <div style="background: #f8f9fa; padding: 35px; border-radius: 16px; border-left: 5px solid #248dc7;">
+            <h3 style="margin-top: 0; color: #14549c;">Module Federation</h3>
+            <ul style="font-size: 0.95rem;">
+                <li>Routes in Anhar Shell</li>
+                <li>Finance & Payable modules</li>
+                <li>loadComponent patterns</li>
+                <li>Cross-module consistency</li>
+            </ul>
+        </div>
+        
+        <!-- Medium cards -->
+        <div style="background: #f8f9fa; padding: 35px; border-radius: 16px; border-left: 5px solid #14549c;">
+            <h3 style="margin-top: 0; color: #248dc7;">Testing Infrastructure</h3>
+            <ul style="font-size: 0.95rem;">
+                <li>Comprehensive unit testing</li>
+                <li>Test bases & factories</li>
+                <li>CI/CD pipelines</li>
+                <li>Integration patterns</li>
+            </ul>
+        </div>
+        
+        <div style="grid-column: span 2; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <h3 style="margin-top: 0; color: #14549c;">Data Query Engine & Developer Experience</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                <div>
+                    <h4>CommonDQueryDataset Service</h4>
+                    <ul style="font-size: 0.95rem;">
+                        <li>Dynamic data retrieval</li>
+                        <li>Transformation pipelines</li>
+                        <li>Aggregation operations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Developer Tools</h4>
+                    <ul style="font-size: 0.95rem;">
+                        <li>Structure scanning for API discovery</li>
+                        <li>Python ML service integration</li>
+                        <li>Docker configurations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="timeline">
-        <div class="timeline-item left animate">
-            <div class="timeline-content">
-                <h4>Q1: Foundation & Infrastructure</h4>
-                <p>Established core AI infrastructure with gRPC services. Launched Trial Balance and Profit & Loss reporting for the Finance system.</p>
+    
+    <div style="background: linear-gradient(135deg, #14549c 0%, #248dc7 100%); color: white; border-radius: 16px; padding: 45px; margin: 50px 0;">
+        <h2 style="color: white; margin-top: 0;">Microservices Architecture Excellence</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 30px;">The Supply Chain system exemplifies modern software architecture, built entirely on microservices principles for maximum scalability, resilience, and maintainability.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 25px; border-radius: 8px;">
+                <h4 style="color: #8ae3ff; margin-top: 0;">Architecture Benefits</h4>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem;">
+                    <li>Independent service deployment and scaling</li>
+                    <li>Technology stack flexibility per service</li>
+                    <li>Fault isolation and resilience</li>
+                    <li>Team autonomy and faster development cycles</li>
+                </ul>
+            </div>
+            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 25px; border-radius: 8px;">
+                <h4 style="color: #8ae3ff; margin-top: 0;">Technical Implementation</h4>
+                <ul style="color: rgba(255,255,255,0.95); font-size: 1rem;">
+                    <li>Container orchestration with Kubernetes</li>
+                    <li>Service discovery and API gateway</li>
+                    <li>Distributed tracing and monitoring</li>
+                    <li>Event-driven inter-service communication</li>
+                </ul>
             </div>
         </div>
-        <div class="timeline-item right animate">
-            <div class="timeline-content">
-                <h4>Q2: Specialized AI & Assets</h4>
-                <p>Implemented Sales and Purchase Approval Agents. Enhanced Asset Management with dynamic expressions and financial transaction posting.</p>
-            </div>
-        </div>
-        <div class="timeline-item left animate">
-            <div class="timeline-content">
-                <h4>Q3: Suppliers & Portals</h4>
-                <p>Released the Supplier Portal with RFQ and PO management. Advanced OCR capabilities for bilingual document processing were integrated.</p>
-            </div>
-        </div>
-        <div class="timeline-item right animate">
-            <div class="timeline-content">
-                <h4>Q4: Ecosystem Optimization</h4>
-                <p>Finalized ZATCA e-invoicing integration. Upgraded the entire platform to Angular 20 and implemented the audit logging service.</p>
-            </div>
-        </div>
+    </div>
+    
+    <h2>Shared Components & Services</h2>
+    <div style="background: linear-gradient(to right, rgba(36, 141, 199, 0.08), rgba(138, 227, 255, 0.08)); padding: 35px; border-radius: 12px; border-left: 4px solid #248dc7;">
+        <ul style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+            <li>Audit History Log component</li>
+            <li>Helper Service utilities</li>
+            <li>Page Table Header</li>
+            <li>Global breadcrumbs with routing</li>
+            <li>Enhanced LookupSelect</li>
+            <li>Form Factory usage</li>
+        </ul>
     </div>
 </section>
 
 <!-- footer.html -->
 <footer>
-    <div class="container">
-        <div class="footer-logos">
-            <div class="kitsys-logo">
-                <svg viewBox="0 0 150 38" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="currentColor" d="M69.3,27.3l1.1,1.6h-3.7l-1.1-1.5c-3-4-8.1-6.4-13.7-7.2l-0.2,0V29h-3.5V12.5c0-1.9,1.5-3.5,3.5-3.5v8.6
-            c1.1,0.1,2.2,0.2,3.3,0.5l1.2-0.4c4.4-1.6,8.3-3.9,11.6-7.7L68.6,9h1.8c0,0-4.3,6.6-13.1,9.7C62.2,20.4,66.9,23.8,69.3,27.3z"></path>
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 50px; text-align: left;">
+        <div>
+            <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 2px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.03 407.69" style="height: 40px; filter: brightness(0) invert(1);">
+                    <defs><style>.a{fill:url(#a);}.b{fill:url(#b);}.c{fill:url(#c);}</style>
+                    <linearGradient id="a" x1="15.78" y1="267.23" x2="435.9" y2="267.23" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.07" stop-color="#2daddf"/><stop offset="0.24" stop-color="#248dc7"/><stop offset="0.41" stop-color="#1d74b4"/><stop offset="0.59" stop-color="#1862a7"/><stop offset="0.78" stop-color="#15579f"/><stop offset="1" stop-color="#14549c"/></linearGradient>
+                    <linearGradient id="b" x1="174.51" y1="12.11" x2="423.37" y2="155.78" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.22" stop-color="#2aa0d5"/><stop offset="0.56" stop-color="#1e77b6"/><stop offset="0.84" stop-color="#175da3"/><stop offset="1" stop-color="#14549c"/></linearGradient>
+                    <linearGradient id="c" x1="-8.56" y1="441.63" x2="102.26" y2="249.68" gradientTransform="matrix(1, 0, 0, -1, 0, 502)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32beeb"/><stop offset="0.08" stop-color="#2eb1e1"/><stop offset="0.36" stop-color="#2389c3"/><stop offset="0.62" stop-color="#1b6cae"/><stop offset="0.84" stop-color="#165aa1"/><stop offset="1" stop-color="#14549c"/></linearGradient></defs>
+                    <path class="a" d="M125.76,222.07q35.65-30.78,71.39-61.64,39.14-33.93,78.19-67.92c2.24-2,4.33-3.33,7.51-3.25q75.22.1,150.52.07a17.3,17.3,0,0,1,2.53.43c-6.22,5.42-11.85,10.41-17.49,15.32Q300.16,207.62,182,310.15c-20.88,18.14-41.62,36.49-62.79,54.2C99.53,380.82,77.2,385,53.5,374.61,30,364.2,17.3,345,16.22,319.4c-.94-22.69-.08-45.45,0-68.14,2.38,0,2.38,2.1,3,3.54,10.62,24.86,38.44,25.65,52,13.08,15.46-14.38,32-27.6,47.9-41.55C121.14,224.45,122.94,222.43,125.76,222.07Z" transform="translate(-15.78 -46.19)"/>
+                    <path class="b" d="M125.18,404.45c32.16-28,62.44-55.71,94.16-81.73,16.83-13.87,38-17.92,59.75-17.34,25.15.65,47.19,9.47,66.19,26L480.12,448.46c1.59,1.37,3.11,2.81,4.7,4.19-1,2-2.75,1-4.05,1-49.43.07-98.85,0-148.28.07a10.44,10.44,0,0,1-7.66-2.82c-10.69-9.54-21.75-18.64-32.37-28.25-29.19-26.3-63.73-37.21-102.46-35.91C168.76,387.61,158.64,390.5,125.18,404.45Z" transform="translate(-15.78 -46.19)"/>
+                    <path class="c" d="M125.76,222.07C107,238.4,88.69,255.23,69.33,270.91c-16.55,13.37-42.56,5.5-51-14.45-.72-1.73-1.37-3.54-2.09-5.27-.08-2.46-.22-5-.22-7.44V46.19c10.62,9.18,20.38,17.49,30.13,25.94,25.08,21.68,50.15,43.5,75.37,65.11a10.87,10.87,0,0,1,4.26,9.17C125.54,171.63,125.76,196.85,125.76,222.07Z" transform="translate(-15.78 -46.19)"/>
+                </svg>
+                <svg viewBox="48 9 95 29" xmlns="http://www.w3.org/2000/svg" style="height: 40px; filter: brightness(0) invert(1);">
+                    <path fill="currentColor" d="M69.3,27.3l1.1,1.6h-3.7l-1.1-1.5c-3-4-8.1-6.4-13.7-7.2l-0.2,0V29h-3.5V12.5c0-1.9,1.5-3.5,3.5-3.5v8.6 c1.1,0.1,2.2,0.2,3.3,0.5l1.2-0.4c4.4-1.6,8.3-3.9,11.6-7.7L68.6,9h1.8c0,0-4.3,6.6-13.1,9.7C62.2,20.4,66.9,23.8,69.3,27.3z"></path>
                     <path fill="currentColor" d="M72.8,12.6l-2-2l2-2l2,2L72.8,12.6z M74.5,14.5V29H71V17.9C71,16,72.6,14.5,74.5,14.5z"></path>
-                    <path fill="currentColor" d="M84.2,28v0.8h-2.6c-1.9,0-3.5-1.6-3.5-3.5v-9.8H76v-1.1h2.2v-3.8c1.9,0,3.5,1.5,3.5,3.5v0.4h1.7v1.1h-1.7v10.8
-            c0,0.7,0.6,1.4,1.4,1.4h0.9C84,27.7,84.2,27.8,84.2,28z"></path>
-                    <path fill="currentColor" d="M101.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3
-            c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.9-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5
-            c-1.6-0.2-6.1,0.1-6.1,2C88.2,22.9,101.5,17.5,101.5,24.8z"></path>
-                    <path fill="currentColor" d="M137.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3
-            c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.8-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5
-            c-1.6-0.2-6.1,0.1-6.1,2C124.2,22.9,137.5,17.5,137.5,24.8z"></path>
-                    <polygon fill="currentColor" points="111.7,28.8 107.3,36.9 108.8,36.9 120.9,14.5 119.5,14.5 112.3,27.7 105.1,14.5 101.3,14.5
-            109.1,28.8 	"></polygon>
+                    <path fill="currentColor" d="M84.2,28v0.8h-2.6c-1.9,0-3.5-1.6-3.5-3.5v-9.8H76v-1.1h2.2v-3.8c1.9,0,3.5,1.5,3.5,3.5v0.4h1.7v1.1h-1.7v10.8 c0,0.7,0.6,1.4,1.4,1.4h0.9C84,27.7,84.2,27.8,84.2,28z"></path>
+                    <path fill="currentColor" d="M101.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3 c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.9-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5 c-1.6-0.2-6.1,0.1-6.1,2C88.2,22.9,101.5,17.5,101.5,24.8z"></path>
+                    <path fill="currentColor" d="M137.5,24.8c0,3.5-4.7,4.2-7.9,4.2c-3.7,0-5.8-0.7-8.4-2.6l-0.1-1.6c2,2.6,5.5,3.3,8.6,3.3 c1.6,0,4.6-0.6,4.6-2.5c0-3.9-13.6,0.9-13.6-7.4c0-3.2,5.8-3.8,8.7-3.8c3.8,0,6.4,1.3,8.1,3v1.6c-1.4-1.9-3.8-3.1-7.2-3.5 c-1.6-0.2-6.1,0.1-6.1,2C124.2,22.9,137.5,17.5,137.5,24.8z"></path>
+                    <polygon fill="currentColor" points="111.7,28.8 107.3,36.9 108.8,36.9 120.9,14.5 119.5,14.5 112.3,27.7 105.1,14.5 101.3,14.5 109.1,28.8 	"></polygon>
                 </svg>
             </div>
-            <div class="nawras-logo">
-                <img src="../full-logo.svg" alt="Nawras Logo" style="filter: brightness(0) invert(1);">
-            </div>
+            <h4 style="color: white; margin-bottom: 15px; font-size: 1.1rem;">Developed By</h4>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1rem; font-weight: 500;">Kitsys for Digital Solutions</p>
+            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 12px;">Enterprise ERP Solutions & Digital Transformation</p>
         </div>
-        <p>&copy; 2025 Kitsys for System Development. All Rights Reserved.</p>
-        <p style="margin-top: 1rem; opacity: 0.6; font-size: 0.9rem;">Partnering with Obeikan Digital Solutions for a Brighter Future.</p>
+        <div>
+            <h4 style="color: white; margin-bottom: 15px; font-size: 1.1rem;">Client</h4>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1rem;">Obeikan Digital Solutions</p>
+            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 12px;">Nawras ERP Platform</p>
+        </div>
+        <div>
+            <h4 style="color: white; margin-bottom: 15px; font-size: 1.1rem;">Period</h4>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1rem;">Fiscal Year 2025</p>
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-top: 20px;">&copy; 2025 Kitsys. All Rights Reserved</p>
+        </div>
     </div>
 </footer>
-<!-- External Scripts for UI effects -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const observers = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                }
-            });
-        }, { threshold: 0.1 });
 
-        document.querySelectorAll('.animate').forEach(el => observers.observe(el));
+</div>
+
+<script>
+// Chart.js Configuration with Brand Colors
+const brandColors = {
+    primary: '#14549c',
+    accent: '#248dc7',
+    accentLight: '#8ae3ff',
+    gradient: ['#14549c', '#248dc7', '#32beeb', '#8ae3ff'],
+    gray: '#666666',
+    lightGray: '#e1e8ed'
+};
+
+Chart.defaults.font.family = "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+Chart.defaults.font.size = 12;
+Chart.defaults.color = '#444';
+
+// Module Completion Chart (Doughnut)
+const moduleCtx = document.getElementById('moduleCompletionChart');
+if (moduleCtx) {
+    new Chart(moduleCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Sales', 'Procurement', 'Manufacturing', 'Inventory', 'Finance', 'AI/OCR', 'Others'],
+            datasets: [{
+                data: [100, 95, 90, 100, 100, 85, 80],
+                backgroundColor: [
+                    brandColors.primary,
+                    brandColors.accent,
+                    '#32beeb',
+                    brandColors.accentLight,
+                    '#1d74b4',
+                    '#2aa0d5',
+                    '#1862a7'
+                ],
+                borderWidth: 0,
+                hoverOffset: 8
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    position: 'right',
+                    labels: {
+                        padding: 15,
+                        font: {
+                            size: 11
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.label + ': ' + context.parsed + '%';
+                        }
+                    }
+                }
+            },
+            animation: {
+                animateRotate: true,
+                duration: 1500
+            }
+        }
     });
+}
+
+// Production Progress Chart (Horizontal Bar)
+const productionCtx = document.getElementById('productionProgressChart');
+if (productionCtx) {
+    new Chart(productionCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Live', 'In Testing', 'In Development'],
+            datasets: [{
+                label: 'Status Distribution (%)',
+                data: [85, 10, 5],
+                backgroundColor: [
+                    brandColors.primary,
+                    brandColors.accent,
+                    brandColors.lightGray
+                ],
+                borderRadius: 8,
+                borderSkipped: false
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.parsed.x + '%';
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%';
+                        }
+                    },
+                    grid: {
+                        color: brandColors.lightGray
+                    }
+                },
+                y: {
+                    grid: {
+                        display: false
+                    }
+                }
+            },
+            animation: {
+                duration: 1500
+            }
+        }
+    });
+}
+
 </script>
 
 </body>
