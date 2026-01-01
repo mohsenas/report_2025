@@ -36,16 +36,17 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: var(--dark);
-    background: #ffffff;
+    background: linear-gradient(135deg, #f0f8ff 0%, #e8f4f8 50%, #f0f7fb 100%);
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
 }
 
 .report-container {
     max-width: 1200px;
     margin: 0 auto;
-    background: white;
+    background: transparent;
 }
 
 /* COVER PAGE - Modern & Smooth */
@@ -196,10 +197,11 @@ body {
 /* SECTIONS */
 section {
     padding: 80px 60px;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 section:nth-child(even) {
-    background: var(--light-gray);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .section-number {

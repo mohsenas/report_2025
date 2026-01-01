@@ -274,59 +274,51 @@
     
     <p>The core of Nawras ERP covers the entire value chain of enterprise operations, from initial customer inquiry to final delivery and financial reconciliation.</p>
     
-    <div class="module-section">
-        <h3>Sales Management</h3>
-        <h4>Operations & Lifecycle</h4>
-        <ul>
-            <li>Sales Order & Quotation: Complete lifecycle management with versioning and professional conversion tools</li>
-            <li>Rework Order: Specialized handling for defective products and customer returns</li>
-            <li>Customer Management: Centralized profile, credit, and contact management</li>
-            <li>Order & Quotation History: Comprehensive audit trails</li>
-        </ul>
+    <!-- ERP Modules Grid -->
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin: 50px 0;">
+        <!-- Sales Management Card -->
+        <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #14549c; transition: transform 0.3s, box-shadow 0.3s;">
+            <h3 style="margin-top: 0; color: #14549c; font-size: 1.6rem; margin-bottom: 20px;">Sales Management</h3>
+            <p style="color: #666; font-size: 1rem; line-height: 1.7; margin-bottom: 25px;">Complete lifecycle management for sales orders and quotations with versioning, customer portal integration, and comprehensive analytics. Features multi-level approval workflows, flexible pricing configurations, and interactive dashboards for revenue analysis.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px;">
+                <span style="background: rgba(20, 84, 156, 0.1); color: #14549c; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Order Management</span>
+                <span style="background: rgba(20, 84, 156, 0.1); color: #14549c; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Customer Portal</span>
+                <span style="background: rgba(20, 84, 156, 0.1); color: #14549c; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Sales Analytics</span>
+            </div>
+        </div>
         
-        <h4>Customer Portal</h4>
-        <ul>
-            <li>Order Tracker timeline with clear state visualization and progress history</li>
-            <li>Read/unread tracking for customer engagement monitoring</li>
-            <li>Automated item mapping for seamless order processing</li>
-        </ul>
+        <!-- Procurement Card -->
+        <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #248dc7; transition: transform 0.3s, box-shadow 0.3s;">
+            <h3 style="margin-top: 0; color: #248dc7; font-size: 1.6rem; margin-bottom: 20px;">Procurement (Purchase)</h3>
+            <p style="color: #666; font-size: 1rem; line-height: 1.7; margin-bottom: 25px;">Comprehensive procurement solution with Suppliers Portal for RFQ, purchase orders, and advance ship notices. Includes event-driven integration, AI-recommended orders, and real-time supplier collaboration tools for streamlined purchasing operations.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px;">
+                <span style="background: rgba(36, 141, 199, 0.1); color: #248dc7; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Suppliers Portal</span>
+                <span style="background: rgba(36, 141, 199, 0.1); color: #248dc7; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">RFQ Management</span>
+                <span style="background: rgba(36, 141, 199, 0.1); color: #248dc7; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">ASN Tracking</span>
+            </div>
+        </div>
         
-        <h4>Configuration & Analytics</h4>
-        <ul>
-            <li>Pricing: Flexible "Prices by Customer" configuration for negotiated contracts</li>
-            <li>Sales Force: Management of Sales Representatives, commission structures, and territories</li>
-            <li>Approvals: Multi-level approval matrix for financial controls</li>
-            <li>Sales Analysis: Interactive dashboards for revenue trends and regional performance</li>
-        </ul>
-    </div>
-    
-    <div class="module-section">
-        <h3>Procurement (Purchase)</h3>
-        <h4>Suppliers Portal</h4>
-        <ul>
-            <li>Request for Quotation Management System: Complete RFQ lifecycle management from creation through publishing</li>
-            <li>Proposed Purchase Order Management: Comprehensive system for proposed orders before conversion to discrete POs</li>
-            <li>Discrete Purchase Order Management: Full discrete PO management for confirmed orders</li>
-            <li>Advance Ship Notice Management: Complete ASN system with comprehensive status tracking and warehouse integration</li>
-            <li>Supplier Item Dictionary: Centralized mapping of customer items to supplier-specific codes</li>
-            <li>Shipping Track Management: Automatic recording of all status changes for advance ship notices</li>
-        </ul>
+        <!-- Manufacturing Card -->
+        <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #32beeb; transition: transform 0.3s, box-shadow 0.3s;">
+            <h3 style="margin-top: 0; color: #32beeb; font-size: 1.6rem; margin-bottom: 20px;">Manufacturing</h3>
+            <p style="color: #666; font-size: 1rem; line-height: 1.7; margin-bottom: 25px;">End-to-end production management with BOM and routing configurations, work center scheduling, and real-time capacity visibility. Features automated costing calculations, variance analysis, and comprehensive production order tracking from creation to completion.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px;">
+                <span style="background: rgba(50, 190, 235, 0.1); color: #32beeb; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Production Orders</span>
+                <span style="background: rgba(50, 190, 235, 0.1); color: #32beeb; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Cost Analysis</span>
+                <span style="background: rgba(50, 190, 235, 0.1); color: #32beeb; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Capacity Planning</span>
+            </div>
+        </div>
         
-        <h4>Purchase Operations</h4>
-        <ul>
-            <li>Purchase Order: Robust creation and tracking</li>
-            <li>Requisitions: Internal request workflows to standardize demand</li>
-            <li>Inquiries: Efficient supplier inquiry and quote gathering</li>
-            <li>Goods Receipt: Validation and recording of received materials</li>
-            <li>Proposed PO: AI/System-recommended orders to optimize stock levels</li>
-        </ul>
-        
-        <h4>Integration</h4>
-        <ul>
-            <li>Event-driven integration with Purchase system for automatic RFQ and PO creation</li>
-            <li>Bidirectional integration with Warehouse for receipt notice status updates</li>
-            <li>Notification system for real-time supplier alerts</li>
-        </ul>
+        <!-- Inventory & Warehouse Card -->
+        <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #8ae3ff; transition: transform 0.3s, box-shadow 0.3s;">
+            <h3 style="margin-top: 0; color: #1d74b4; font-size: 1.6rem; margin-bottom: 20px;">Inventory & Warehouse</h3>
+            <p style="color: #666; font-size: 1rem; line-height: 1.7; margin-bottom: 25px;">Complete inventory management with multi-location warehouse support, cycle counting, and comprehensive item master data. Includes real-time stock levels, movement tracking, valuation reports, and advanced analytics for optimal inventory control.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px;">
+                <span style="background: rgba(29, 116, 180, 0.1); color: #1d74b4; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Multi-Location</span>
+                <span style="background: rgba(29, 116, 180, 0.1); color: #1d74b4; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Cycle Counting</span>
+                <span style="background: rgba(29, 116, 180, 0.1); color: #1d74b4; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Stock Valuation</span>
+            </div>
+        </div>
     </div>
     
     <!-- Data Importer Feature Card -->
@@ -353,56 +345,6 @@
                 </ul>
             </div>
         </div>
-    </div>
-    
-    <div class="module-section">
-        <h3>Manufacturing</h3>
-        <h4>Operations & Execution</h4>
-        <ul>
-            <li>Production Orders: Creation, release, and management of build orders</li>
-            <li>Order Management: Tools for rescheduling and monitoring active jobs</li>
-            <li>Execution & Closing: Recording output, consumption, and finalizing costs</li>
-        </ul>
-        
-        <h4>Configuration & Setup</h4>
-        <ul>
-            <li>Foundation: Work Centers, Machines, and Standard Tasks</li>
-            <li>Product Definition: Bills of Materials (BOMs) and Routing Codes</li>
-            <li>Planning: Production Calendars and item-specific production attributes</li>
-        </ul>
-        
-        <h4>Costing & Analytics</h4>
-        <ul>
-            <li>Costing Engine: Setup of Cost Components, Surcharges, and Operation Rates</li>
-            <li>Calculation: Automated standard and actual cost calculations</li>
-            <li>Cost Analysis: Detailed variances for Materials, Tasks, and overall Cost Summaries</li>
-            <li>Capacity: Real-time visibility into Available Resource Capacity</li>
-        </ul>
-    </div>
-    
-    <div class="module-section">
-        <h3>Inventory & Warehouse</h3>
-        <h4>Operations</h4>
-        <ul>
-            <li>Transactions: Adjustments, Transfers, Goods Receipts, and Deliveries</li>
-            <li>Internal Flow: Production Receipts, Material Requests, and Consumable Requests</li>
-            <li>Accuracy: Cycle Counting and Maintain Item Lots modules</li>
-            <li>Logistics: Packing Matrix and Movement tracking</li>
-        </ul>
-        
-        <h4>Configuration</h4>
-        <ul>
-            <li>Structure: Warehouse Types, Locations, and Bins</li>
-            <li>Classification: Product Types, Classes, Lines, and Commodities</li>
-            <li>Item Master: Comprehensive management of Items, Groups, and Manufacturers</li>
-            <li>Units: Flexible Unit Categories and Conversion rules</li>
-        </ul>
-        
-        <h4>KPIs & Analytics</h4>
-        <ul>
-            <li>Stock Reports: Real-time Stock Levels, Movement reports with trend analysis</li>
-            <li>Valuation: Inventory Valuation reports covering various costing methods</li>
-        </ul>
     </div>
     
     <!-- Professional Stock Aging Analysis Feature Card -->
